@@ -7,20 +7,75 @@ console.log("please"); console.log("do not do this") //it is not the good practi
 
 //semicolon is use to terminate the current statement. It is the good practice.
 
-// primitive datatypes ....
+//___________________________________ primitive datatypes ....
 //number 
-//bigint
-//string : " "
-//boolean : true/false
-//null : standalone value
-//undefined
-//symbol : uniqueness of the component
 
-//user defined datatypes.
-// object
+const bigNumber = 232323132423231n;
+console.log(bigNumber);
+console.log(typeof bigNumber);   //bigint
+//bigint
+
+
+//string : " "
+
+
+//boolean : true/false
+
+
+const outsideTemp = null;
+console.log(outsideTemp); //null
+console.log(typeof outsideTemp); //object
+//null : standalone value
+
+
+let userEmail; //or
+let userState = undefined;
+console.table([userEmail,userState]);
+//undefined : in both the cases above the value of the veriable is undefined.
+
+
+const id = Symbol('123');
+const anotherId = Symbol('123');
+console.table([id,anotherId]);
+console.log(id==anotherId);  //false
+console.log(id===anotherId);  //false
+console.log(typeof id); //symbol
+//symbol : uniqueness of the component, even if we pass the same value for different variables the return values will be unique.
+
+//___________________non primitive datatypes or reference type.
+let myObj = {
+    name: "pushpraj",
+    age: 22,
+};
+console.log(typeof myObj); //object
+// object,
+
+
+const heros = ["shaktiman","naagraj", "doga"];
+console.log(typeof heros); //object
+// array,
+
+const myFunction = function(){
+    console.log("hello world");
+}
+console.log(typeof myFunction);
+//functions
+
+
+
+
+//_______________________________________________________________________
+console.log("hello my friend");
 
 console.log(typeof undefined); // undefined.
 console.log(typeof null); // object
+// javascript is dynamically typed language.
+
+let a = "12"
+let b = Number(a);
+console.log(typeof(a));
+console.log(typeof(b));
+
 
 
 
