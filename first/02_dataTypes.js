@@ -77,6 +77,28 @@ console.log(typeof(a));
 console.log(typeof(b));
 
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ___________________memories_____________________
+// stack(primitive type) and heap(non primitive type).
+// the data stored in stack give the copy of the value stored.
+let myName = "pushpraj"
+let myPrevName = myName
+myPrevName = "anand"
+console.log(myName);
+console.log(myPrevName);
+// the data stored in heap. the reference of the data is returned, so if changes are made it also reflect in the origional space.
+let userOne = {
+    email : "pushpraj.desai.2020@gmail.com",
+    upi : "user@byl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "pushpraj@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
 

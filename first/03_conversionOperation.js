@@ -77,3 +77,6 @@ num1 = num2 = num3 = 2+2; */
 let gameCounter = 100
 gameCounter++;
 console.log(gameCounter); //101
+
+console.log(0==null); //false
+console.log(0==-null); //true
