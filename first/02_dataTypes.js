@@ -1,3 +1,6 @@
+// No, JavaScript is not a statically typed language; it is a dynamically typed language.
+
+
 "use strict"; //treat all code as newer version.
 var hello = "hello" // we have stoped using 'var' due to block scope problems, in older days it was not following scopes, so we use 'let' instead
 console.log(hello);
@@ -24,12 +27,16 @@ if (userName) {
 }
  */
 
-__________________________________________________________________________
+//__________________________________________________________________________
 console.log("please"); console.log("do not do this") //it is not the good practice because it is not readable
 
 //semicolon is use to terminate the current statement. It is the good practice.
 
-//___________________________________ primitive datatypes ....
+//___________________________________ primitive datatypes_________________________
+
+// Basically primitive datatypes are 'call by value' : that means changes are made in the copy 
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt.
+
 
 //number 
 const bigNumber = 232323132423231n;
@@ -69,7 +76,12 @@ console.log(id===anotherId);  //false
 console.log(typeof id); //symbol
 //symbol : uniqueness of the component, even if we pass the same value for different variables the return values will be unique.
 
-//___________________non primitive datatypes or reference type.
+//___________________non primitive datatypes or reference type.__________________________________
+
+// these non primitive databases are call by reference basically.
+// 3 types : Array, objects, functions
+
+
 let myObj = {
     name: "pushpraj",
     age: 22,
@@ -111,8 +123,8 @@ console.log(typeof(b));
 let myName = "pushpraj"
 let myPrevName = myName
 myPrevName = "anand"
-console.log(myName);
-console.log(myPrevName);
+console.log(myName);  //pushpraj
+console.log(myPrevName);  //anand
 // the data stored in heap. the reference of the data is returned, so if changes are made it also reflect in the origional space.
 let userOne = {
     email : "pushpraj.desai.2020@gmail.com",
@@ -123,8 +135,8 @@ let userTwo = userOne
 
 userTwo.email = "pushpraj@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email); //pushpraj@gmail.com
+console.log(userTwo.email); //pushpraj@gmail.com
 
 
 
