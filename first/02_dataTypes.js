@@ -1,15 +1,37 @@
-"use strict"; //treat all code as newer verstion.
-var hello = "hello"
+"use strict"; //treat all code as newer version.
+var hello = "hello" // we have stoped using 'var' due to block scope problems, in older days it was not following scopes, so we use 'let' instead
 console.log(hello);
 
+
+
+//______________________________POPUPS__________________________________________________________________
 // alert(3+3) // it will not work in nodejs in this way, if we run this line of code in browser console it will run just fine.
+
+// confirm()  
+/* const userResponse = confirm("Do you want to continue?");
+if (userResponse) {
+  console.log("User chose OK.");
+} else {
+  console.log("User chose Cancel.");
+} */
+
+// prompt()
+/* const userName = prompt("What is your name?");
+if (userName) {
+  console.log(`Hello, ${userName}!`);
+} else {
+  console.log("User canceled the prompt.");
+}
+ */
+
+__________________________________________________________________________
 console.log("please"); console.log("do not do this") //it is not the good practice because it is not readable
 
 //semicolon is use to terminate the current statement. It is the good practice.
 
 //___________________________________ primitive datatypes ....
-//number 
 
+//number 
 const bigNumber = 232323132423231n;
 console.log(bigNumber);
 console.log(typeof bigNumber);   //bigint
@@ -33,6 +55,11 @@ let userState = undefined;
 console.table([userEmail,userState]);
 //undefined : in both the cases above the value of the veriable is undefined.
 
+
+//********** 
+//console.log(typeof(null));        //object
+//console.log(typeof(undefined));   //undefined
+//console.log(typeof(NaN));         //number
 
 const id = Symbol('123');
 const anotherId = Symbol('123');
